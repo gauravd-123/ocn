@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Exp 04: Crtical Angle</h3>
+      <code>
+        clc;<br />
+        clear;<br />
+        close;<br />
+        theta_a_degrees=input("enter the value acceptance angle in degrees:- ")
+        //12 <br />
+        theta_a_radians=(theta_a_degrees)*(%pi/180);<br />
+        delta=input("enter the value of relative refractive index difference:-
+        ") //0.03 <br />
+        NA=sin(theta_a_radians);<br />
+        disp ("numerical aperture =",NA) n1=(NA)/(sqrt(2*delta));<br />
+        disp ("n1=", n1);<br />
+        n2=n1-(delta*n1);<br />
+        disp("n2=", n2);<br />
+        fiy_c=asin(n2/n1);<br />
+        fiy_c_degrees=(fiy_c)*(180/%pi);<br />
+        disp('critical angle=',fiy_c_degrees,'degrees');<br />
+      </code>
+    </div>
+
+    <div>
+      <h3>Exp 07: Skew rays</h3>
+      <code>
+        clc;<br />
+        clear;<br />
+        close;<br />
+        NA= input('Enter numerical aperture= '); //0.12 <br />
+        r=input('Enter angle of skew rays= '); //100 <br />
+        gamma = r/2;<br />
+        theta_a = asin(NA);<br />
+        theta_a_deg = theta_a * 180/%pi;<br />
+        theta_as = asin(NA/cos(gamma));<br />
+        theta_as_deg = theta_as * 180/%pi;<br />
+        disp ("Acceptance angle for meridional rays in degree =
+        ",theta_a_deg);<br />
+        disp ("Acceptance angle for skew rays in degree = ",theta_as_deg);<br />
+      </code>
+    </div>
+  </body>
+</html>

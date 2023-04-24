@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+}
+
+div:hover {
+  background-color: aqua;
+}
+
+h3:hover {
+  background-color: blue;
+}
